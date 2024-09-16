@@ -1,0 +1,254 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffc300; /* Maintaining the theme's background color */
+    color: #000814; /* Primary text color */
+  }
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000814; /* Matching the link color from home.css */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .nav-links li a:hover {
+    color: #ffd60a; /* Matching the hover state color from home.css */
+  }
+  
+  
+  .logo img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100px; /* Matching the logo size from home.css */
+  }
+  
+  
+  hr {
+    height: 2px;
+    background-color: rgb(0, 0, 0); /* Keeping the hr style consistent */
+    border: none;
+   
+  }
+  
+  
+  /* Footer Styles to match home.css */
+  .footer-section {
+    background-color: #000000; /* Dark navy background */
+    color: #ffffff; /* White text */
+    padding: 50px 0;
+    font-size: 0.875em; /* Adjust size as needed */
+  }
+  
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  .footer-about,
+  .footer-contact,
+  .footer-find-us,
+  .footer-social,
+  .footer-responsibility,
+  .footer-accreditation {
+    flex: 1;
+    min-width: 140px; /* Minimum width of the columns */
+    margin-bottom: 20px;
+  }
+  
+  
+  .footer-section h3 {
+    color: #ffc300; /* Golden yellow text */
+    margin-bottom: 10px;
+  }
+  
+  
+  .footer-section a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    display: block; /* Makes each link appear on a new line */
+    margin-bottom: 5px;
+  }
+  
+  
+  .footer-section a:hover {
+    color: #ffd60a; /* Lighter yellow on hover */
+  }
+  
+  
+  /* Responsive adjustments for the footer to match home.css */
+  @media (max-width: 768px) {
+    .footer-grid {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-about,
+    .footer-contact,
+    .footer-find-us,
+    .footer-social,
+    .footer-responsibility,
+    .footer-accreditation {
+        flex-basis: 100%; /* Each takes full width on smaller screens */
+        margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  
+  /* Split Screen Layout for Sign In Page */
+  .split-screen {
+    display: flex;
+    min-height: calc(100vh - 150px); /* Adjusts based on header/footer size */
+  }
+  
+  
+  .left-side, .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  
+  
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  
+  input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  button[type="submit"] {
+    background-color: #000814; /* Button background */
+    color: #ffffff; /* Button text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  button[type="submit"]:hover {
+    background-color: #ffd60a; /* Button hover color */
+  }
+  
+  
+  /* Main content styling */
+  .signup-form {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  
+  .signup-form h2 {
+    margin-bottom: 1.5rem;
+    color: #000814; /* Dark navy text for titles */
+  }
+  
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Soft rounded corners */
+  }
+  
+  
+  form label {
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0;
+  }
+  
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="url"],
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem; /* Space between form fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+  form button {
+    background-color: #000814; /* Dark navy background for buttons */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  form button:hover {
+    background-color: #ffc300; /* Golden yellow on hover */
+    color: #000814;
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-links, .footer-grid {
+        flex-direction: column;
+    }
+   
+    form {
+        padding: 1rem;
+    }
+  }
+  

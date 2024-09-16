@@ -1,0 +1,213 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffc300; /* Maintaining the theme's background color */
+  color: #000814; /* Primary text color */
+}
+
+.container, .container1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #000814;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black; /* Link color */
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: white; /* Sky blue on hover */
+  background-color: black; /* White background for the text on hover */
+  border-radius: 5px;
+}
+
+.logo img {
+  height: auto;
+  width: 100px; /* Logo size */
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #ffc300;
+}
+
+.hero h1 {
+  color: #000814; /* Hero section heading color */
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  color: #000814; /* Subtext color */
+  margin-bottom: 2rem;
+}
+
+.category-buttons button {
+  background-color: #000814; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #ffd60a; /* Button hover background color */
+  color: #000814; /* Button hover text color */
+}
+
+
+
+.partnership-section {
+  padding: 50px 0;
+  background-color: #000814; /* Dark navy background for contrast */
+  color: #fff; /* White text for readability */
+}
+
+.partnership-section h2 {
+  color: #ffd60a; /* Golden yellow headings for vibrancy */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.partnership-section p {
+  color: #fff; /* White paragraph text */
+  line-height: 1.6;
+}
+
+.accessibility-section {
+  padding: 50px 0;
+  background-color: #ffc300; /* Golden yellow background for highlight */
+  color: #000000; /* Dark text for contrast */
+  text-align: center;
+}
+
+.accessibility-section h2 {
+  font-size: 2.5rem;
+  color: #000000; /* Dark text for headings */
+}
+
+.accessibility-section p {
+  max-width: 600px;
+  margin: 0 auto; /* Centering the text block */
+  line-height: 1.6;
+}
+
+.help-section {
+  background-color: #000814; /* Dark navy background */
+  color: #ffd60a; /* Light yellow text for a warm feel */
+  padding: 50px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust based on your content size and container width */
+  gap: 30px; /* Space between grid items */
+  justify-content: center; /* Center grid items horizontally */
+}
+
+.service-item {
+  text-align: center; /* Center-align the service item content */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.service-item img {
+  width: 100%; /* Make image responsive within the container */
+  max-width: 200px; /* Adjust maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Soften the image corners */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.service-text h3, .service-text p {
+  color: #ffd60a; /* Match the section's text color theme */
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Move the item up slightly on hover */
+  cursor: pointer;
+}
+
+/* You may add further styling here as needed */
+
+
+.footer-section {
+  background-color: black; /* Dark background for footer */
+  color: white; /* White text color */
+  padding: 50px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-grid > div {
+  padding: 10px;
+}
+
+.footer-section h3 {
+  color: #ffc300; /* Golden yellow for section headings */
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  color: white; /* White link color */
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ffc300; /* Lighter yellow for link hover effect */
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem 0;
+  }
+
+  .category-buttons button {
+    padding: 0.5rem 1rem;
+  }
+
+  .service-item img {
+    width: 150px; /* Adjusts image size on smaller screens */
+    height: 150px; /* Maintains square aspect ratio on smaller screens */
+  }
+}
